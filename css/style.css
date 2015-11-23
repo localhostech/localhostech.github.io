@@ -49,3 +49,28 @@ a:hover {
     color: #fff;
     text-decoration: none;
 }
+.scroll-down {
+    color: #fff;
+    position: absolute;
+    bottom: 5px;
+    display: block;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    font-size: 0.8em;
+}
+.portfolio {
+    text-align: center;
+    background: url('../img/background2.jpg');
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+}
+.page-box {
+    background: rgba(56, 56, 56, 0.19);
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: left;
+    color: #DADADA;
+}
