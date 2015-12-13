@@ -1,11 +1,26 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic);
+@-webkit-keyframes transport {
+	from {top: 35%;}
+	to {top: 63%;}
+}
 @keyframes transport {
 	from {top: 35%;}
 	to {top: 63%;}
 }
+@-webkit-keyframes pulse {
+	from {opacity: 1;width:32px;height:32px;}
+	to {opacity: 0.5;width:25px;height:25px;}
+}
 @keyframes pulse {
 	from {opacity: 1;width:32px;height:32px;}
 	to {opacity: 0.5;width:25px;height:25px;}
+}
+@-webkit-keyframes topdown {
+	0% {top: 47.9999%;opacity: 0.5;}
+	25% {top: 2%;opacity: 1;}
+	50% {top: 47.9999%;opacity: 0.5;}
+	75% {top: 95%;opacity: 1;}
+	100% {top: 47.9999%;opacity: 0.5;}
 }
 @keyframes topdown {
 	0% {top: 47.9999%;opacity: 0.5;}
@@ -14,6 +29,13 @@
 	75% {top: 95%;opacity: 1;}
 	100% {top: 47.9999%;opacity: 0.5;}
 }
+@-webkit-keyframes leftright {
+	0% {top: 47.9999%;left:47.9999%;}
+	25% {top: 47.9999%;left:2%;}
+	50% {top: 47.9999%;left:47.9999%;}
+	75% {top: 47.9999%;left:95%;}
+	100% {top: 47.9999%;left:47.9999%;}
+}
 @keyframes leftright {
 	0% {top: 47.9999%;left:47.9999%;}
 	25% {top: 47.9999%;left:2%;}
@@ -21,6 +43,7 @@
 	75% {top: 47.9999%;left:95%;}
 	100% {top: 47.9999%;left:47.9999%;}
 }
+
 body {
 	margin: 0 auto;
 	width: 100vw;
@@ -55,12 +78,16 @@ h2 {
 	height: 100vh;
   display: -ms-flex;
   display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
   -webkit-align-items: center;
   -webkit-box-align: center;
   align-items: center;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-justify-content: center;
   -ms-justify-content: center;
 }
@@ -86,17 +113,21 @@ h2 {
     border-radius: 50%;
 }
 .transport-point {
-	animation: transport 4s forwards;
+	-webkit-animation: transport 4s forwards;
+	        animation: transport 4s forwards;
 }
 .transported-point {
 	top: 63%;
 }
 .pulse-point {
-	animation: pulse 1s infinite;
+	-webkit-animation: pulse 1s infinite;
+	        animation: pulse 1s infinite;
 }
 .point-topdown {
-	animation: topdown 3s infinite;
+	-webkit-animation: topdown 3s infinite;
+	        animation: topdown 3s infinite;
 }
 .point-leftright {
-	animation: leftright 3s infinite;
+	-webkit-animation: leftright 3s infinite;
+	        animation: leftright 3s infinite;
 }
