@@ -1,0 +1,102 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic);
+@keyframes transport {
+	from {top: 35%;}
+	to {top: 63%;}
+}
+@keyframes pulse {
+	from {opacity: 1;width:32px;height:32px;}
+	to {opacity: 0.5;width:25px;height:25px;}
+}
+@keyframes topdown {
+	0% {top: 47.9999%;opacity: 0.5;}
+	25% {top: 2%;opacity: 1;}
+	50% {top: 47.9999%;opacity: 0.5;}
+	75% {top: 95%;opacity: 1;}
+	100% {top: 47.9999%;opacity: 0.5;}
+}
+@keyframes leftright {
+	0% {top: 47.9999%;left:47.9999%;}
+	25% {top: 47.9999%;left:2%;}
+	50% {top: 47.9999%;left:47.9999%;}
+	75% {top: 47.9999%;left:95%;}
+	100% {top: 47.9999%;left:47.9999%;}
+}
+body {
+	margin: 0 auto;
+	width: 100vw;
+	height: 100vh;
+	background: url('../img/background.jpg');
+	background-size: cover;
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+	overflow: hidden;
+}
+h2 {
+    font-size: 28px;
+    font-weight: lighter;
+}
+.text-center {
+	text-align: center;
+}
+.btn {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    border: 3px solid white;
+    padding: 18px 25px 20px 25px;
+    display: inline-block;
+}
+.btn.btn-round {
+    border-radius: 12px;
+}
+.flexbox-container {
+	width: 100%;
+	height: 100vh;
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+}
+.control-block {
+  width: 470px;
+  margin-right: 20px;
+  padding: 10px;
+}
+.timer {
+    display: block;
+    font-size: 100px;
+    font-weight: bold;
+    margin-top: -25px;
+}
+.point {
+    display: none;
+    background: rgba(255, 255, 255, 0.78);
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 35%;
+    left: 47.9999%;
+    border-radius: 50%;
+}
+.transport-point {
+	animation: transport 4s forwards;
+}
+.transported-point {
+	top: 63%;
+}
+.pulse-point {
+	animation: pulse 1s infinite;
+}
+.point-topdown {
+	animation: topdown 3s infinite;
+}
+.point-leftright {
+	animation: leftright 3s infinite;
+}
