@@ -69,6 +69,7 @@ h2 {
     border: 3px solid white;
     padding: 18px 25px 20px 25px;
     display: inline-block;
+    transition: 0.3s;
 }
 .btn.btn-round {
     border-radius: 12px;
@@ -93,8 +94,8 @@ h2 {
 }
 .control-block {
   width: 470px;
-  margin-right: 20px;
-  padding: 10px;
+  /* margin-right: 20px; */
+  /* padding: 10px; */
 }
 .timer {
     display: block;
@@ -130,4 +131,8 @@ h2 {
 .point-leftright {
 	-webkit-animation: leftright 3s infinite;
 	        animation: leftright 3s infinite;
+}
+.btn:hover {
+    background: #fff;
+    color: #6D7E92;
 }
