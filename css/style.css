@@ -61,8 +61,7 @@ a:hover {
 }
 .portfolio {
     text-align: center;
-    background: url('../img/background2.jpg');
-    background-size: cover;
+    background: #000;
     height: 100vh;
     color: #fff;
 }
@@ -73,4 +72,26 @@ a:hover {
     padding: 10px;
     text-align: left;
     color: #DADADA;
+}
+.portfolio-card {
+    width: 25%;
+    height: 200px;
+    padding-top: 50px;
+    float: left;
+}
+.portfolio-card img {
+    width: auto;
+    max-height: 150px;
+}   
+.card-descripton {
+    display: none;
+    position: absolute;
+    left: -25%;
+    width: 25%;
+    float: left;
+    height: 250px;
+    background: rgba(0,0,0,0.5);
+}
+.portfolio-card:hover + .card-description {
+    display: block;
 }
