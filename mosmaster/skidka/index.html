@@ -1,0 +1,420 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Скидки</title>
+    <meta name="keywords" content="Установочный центр" />
+    <meta name="description" content="Установочный центр - мы делаем комфорт доступнее" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "format-detection" content = "telephone=no" />
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+    <link rel="stylesheet" type="text/css" href="../style2.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../countdown/jquery.countdown.css" media="screen" />
+    <script src="../jquery.js"></script>
+    <script src="../countdown/jquery.countdown.js"></script>
+	<script>
+        $(function(){
+            setInterval("changeMain()","3000");
+        });
+        
+        function changeMain() {
+            if($(".active_img").next().hasClass("main_image")){
+                $(".active_img").removeClass("active_img").hide().next().addClass("active_img").show();
+            } else {
+                $(".active_img").removeClass("active_img").hide().parent().find("img:first").addClass("active_img").show();
+            }
+        }
+
+		function getClientWidth() {
+			  return document.compatMode=='CSS1Compat' && !window.opera?document.documentElement.clientWidth:document.body.clientWidth;
+		} 
+			 
+		function getClientHeight() {
+		  return document.compatMode=='CSS1Compat' && !window.opera?document.documentElement.clientHeight:document.body.clientHeight;
+		} 
+			 
+		function getScrollY()
+		{
+			scrollY = 0;   
+			if (typeof window.pageYOffset == "number") {
+				scrollY = window.pageYOffset;
+			} else if (document.documentElement && document.documentElement.scrollTop) {
+				scrollY = document.documentElement.scrollTop;
+			}  else if (document.body && document.body.scrollTop) {
+				scrollY = document.body.scrollTop;
+			} else if (window.scrollY) {
+				scrollY = window.scrollY;
+			}
+			return scrollY;
+		} 
+
+		function swsubis(profile) {
+			if(profile) {
+				$("#profile_").val(profile);
+			}
+			
+			$('#subis').fadeIn('fast');
+			$('#subis').css('top',Math.round((getClientHeight()-160)/2)+getScrollY()+'px');
+			$('#subis').css('left',Math.round((getClientWidth()-266)/2)+'px');
+			
+			return false;
+		}
+			
+		function sendForm(link, form) {
+			$.post("http://www.mosmasters.ru/callback.php", $(link).parent().serialize(), function(){
+				if(form == 2)
+					$(link).parent().html('<p class="sendText">Заявка отправлена. Менеджер с Вами свяжется.</p><p><a style="display:block; background-image:none; color: #a59d97;" class="button2" href="#" onclick="$(this).parent().parent().parent().fadeOut(); return false;">&times; Закрыть</a></p>');
+				else
+					$(link).parent().html('<p class="sendText2">Заявка отправлена. Менеджер с Вами свяжется.</p>');
+				setTimeout('$("#subis").hide()', '3000');
+			}, 'json');
+
+			return false;
+		}
+		
+		function closeForm(obj){
+			$(obj).parent().parent().fadeOut('fast');
+			return false;
+		}
+	</script>
+    <script>
+        $(function(){
+
+            var note = $('#note'),
+                    ts = new Date(2012, 0, 1),
+                    newYear = true;
+
+            if((new Date()) > ts){
+                // The new year is here! Count towards something else.
+                // Notice the *1000 at the end - time must be in milliseconds
+                ts = (new Date()).getTime() + 1*24*60*60*1000;
+                newYear = false;
+            }
+
+            $('#countdown').countdown({
+                timestamp	: ts,
+                callback	: function(days, hours, minutes, seconds){
+
+                    var message = "";
+
+                    message += days + " day" + ( days==1 ? '':'s' ) + ", ";
+                    message += hours + " hour" + ( hours==1 ? '':'s' ) + ", ";
+                    message += minutes + " minute" + ( minutes==1 ? '':'s' ) + " and ";
+                    message += seconds + " second" + ( seconds==1 ? '':'s' ) + " <br />";
+
+                    if(newYear){
+                        message += "left until the new year!";
+                    }
+                    else {
+                        message += "left to 10 days from now!";
+                    }
+
+                    note.html(message);
+                }
+            });
+
+        });
+    </script>
+</head>
+<body>
+<div id="subis" style="position: absolute; display: none;
+    background-color: #c00b0b;
+    height: 220px;
+    padding: 20px 10px 10px 20px;
+    position: absolute;
+    width: 366px;
+    z-index: 10;">
+    <form style="margin-top: 0; text-align: center;" class="contacts_form" name="form1" id="addeditform" method="post" action="http://www.mosmasters.ru/callback.php" enctype="multipart/form-data">
+        <input style="padding:10px; margin:10px;" onblur="if(this.value==&quot;&quot;){ this.value=&quot;ФИО&quot;; }" onfocus="if(this.value==&quot;ФИО&quot;) { this.value=&quot;&quot;; }" type="text" class="textFront" id="name_" tabindex="1" validator="required" value="ФИО" name="name" style="border: 1px solid rgb(204, 204, 204);" /><br />
+        <input style="padding:10px; margin:10px;" onblur="if(this.value==&quot;&quot;){ this.value=&quot;Телефон&quot;; }" onfocus="if(this.value==&quot;Телефон&quot;) { this.value=&quot;&quot;; }" type="text" class="textFront" id="phone_" tabindex="1" value="Телефон" name="phone" style="border: 1px solid rgb(204, 204, 204);" /><br />
+        <input style="padding:10px; margin:10px;" onblur="if(this.value==&quot;&quot;){ this.value=&quot;Email&quot;; }" onfocus="if(this.value==&quot;Email&quot;) { this.value=&quot;&quot;; }" type="text" class="textFront" id="email_" tabindex="1" value="Email" name="email" style="border: 1px solid rgb(204, 204, 204);" /><br /><br />
+		<input type="hidden" value="" id="profile_" name="profile" />
+        <a style="margin-left:55px; background-image:none; float:left; color: #ffea75;" class="button2" href="#" onclick="return sendForm(this, 2);">Отправить</a>
+        <a style="margin-left:80px; background-image:none; float:left; color: #a59d97;" class="button2" href="#" onclick="$(this).parent().parent().fadeOut('fast'); return false;">&times; Закрыть</a>
+        <div class="clear"></div>
+    </form>
+</div>
+    <div class="block header">
+        <div class="content">
+            <div class="left">
+                <a href="/"><img class="logo" src="../img2/logotip.svg" /></a>
+                <img class="completed hidden-xs" src="../img2/completed.png" /><span class="hidden-xs">10000</span><p class="hidden-xs">уже выполненных заказов</p>
+            </div>
+            <div class="right">
+                <span><font>+7 (3412)</font> 24 12 24</span>
+                <a onclick="return swsubis();" href="#">ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК</a>
+                <font>Прием заявок с 9 до 19.00</font>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="block">
+        <div class="content">
+            <h2>УСТАНОВКА ЛЮБОЙ ТЕХНИКИ И КОНДИЦИОНЕРОВ</h2>
+            <div class="media">
+                <div class="extra_main">
+                    <img class="main_image active_img" src="../img2/main_1.jpg" />
+                    <img class="main_image" style="display:none;" src="../img2/main_2.jpg" />
+                    <img class="main_image" style="display:none;" src="../img2/main_3.jpg" />
+                    <img class="main_image" style="display:none;" src="../img2/main_4.jpg" />
+                </div>
+                <div class="right-block">
+                    <form method="post" action="http://www.mosmasters.ru/callback.php" enctype="multipart/form-data">
+                        <span class="title">ОТПРАВИТЬ ЗАЯВКУ</span>
+                        <input name="name" type="text" placeholder="Ваше имя" />
+                        <input name="phone" type="text" placeholder="Введите телефон" />
+                        <select name="profile">
+                            <option value="0">Профиль работ</option>
+                            <option value="Сантехнические работы">Сантехнические работы</option>
+                            <option value="Электромонтажные работы">Электромонтажные работы</option>
+                            <option value="Плотницкие работы">Плотницкие работы</option>
+                            <option value="Разводка ТВ-кабеля">Разводка ТВ-кабеля</option>
+                            <option value="Усилитель коллективной, эфирной, домашней антенны">Усилитель коллективной, эфирной, домашней антенны</option>
+                            <option value="Установка и подключение бытовой техники">Установка и подключение бытовой техники</option>
+                            <option value="Установка межкомнатных дверей">Установка межкомнатных дверей</option>
+                            <option value="Обивка дверей">Обивка дверей</option>
+                            <option value="Сборка кухни">Сборка кухни</option>
+                            <option value="Ремонт диванов">Ремонт диванов</option>
+                            <option value="Другое">Другое</option>
+                        </select>
+                        <a onclick="return sendForm(this);" href="#">ОТПРАВИТЬ ЗАЯВКУ</a>
+                    </form>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="discount">
+                <h3>АКЦИЯ!  Пример-Скидка 20% на ВСЕ РАБОТЫ!</h3>
+                <span>До конца осталось: </span>
+                <div id="countdown"></div>
+            </div>
+            <div class="clear"></div>
+            <h2>НАШИ ПРЕИМУЩЕСТВА</h2>
+            <div class="better1">ФИКСИРОВАННАЯ<br />ЦЕНА</div>
+            <div class="better2">РАСЧЕТ СТОИМОСТИ<br />РАБОТ ПО ТЕЛЕФОНУ</div>
+            <div class="better3">РАБОТАЕМ 7 ДНЕЙ В<br />НЕДЕЛЮ ВКЛЮЧАЯ<br />ПРАЗДНИЧНЫЕ ДНИ</div>
+            <div class="better4">НИКАКИХ ПЕРЕПЛАТ<br />ЗА СРОЧНОСТЬ</div>
+            <div class="better5">ВЫЕЗД<br />В ТЕЧЕНИЕ 1 ЧАСА</div>
+            <div class="clear"></div>
+            <h2>О НАС</h2>
+        </div>
+    </div>
+    <div class="block about">
+        <div class="content">
+            <p><span class="big_text">Профессиональные мастера</span><br />
+            и квалифицированные специалисты, в функции которых входит содержание помещений<br />в надлежащем виде, а также <span class="big_text">весь необходимый инструмент</span></p>
+            <div class="left_about">
+                <p><span class="big_text">7 лет на рынке</span> предоставляем<br />организациям и частным лицам услуги<br />по электромонтажным и сантехническим<br />работам, а так же слесарным и плотницким<br />работам, замене замков и установке<br />межкомнатных дверей</p> 
+            </div>
+            <div class="right_about">
+                <p>Мы выполняем <span class="big_text">5 000 заказов<br />в год</span> по сантехнике и электрике<br />и работаем <span class="big_text">без выходных</span></p>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="block">
+        <div class="content">
+            <h2>НАШИ УСЛУГИ</h2>
+            <div class="service">Сантехнические работы<br />от <span>200 р.</span></div>
+            <div class="service">Установка бытовой техники<br />от <span>500 р.</span></div>
+            <div class="service">Установка кондиционеров<br />от <span>5000 р.</span></div>
+            <div class="service">Мастер на час<br /><span>500 р.</span></div>
+            <div class="service_last">Сборка мебели<br />от <span>500 р.</span></div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="block callback">
+        <div class="content">
+            <h3>ОТПРАВИТЬ ЗАЯВКУ</h3>
+            <span><font>+7 (3412)</font> 24 12 24</span>
+            <div class="clear"></div>
+			<form method="post" action="http://www.mosmasters.ru/callback.php" enctype="multipart/form-data">
+                <div class="left_form">
+    				<input name="name" type="text" placeholder="Ваше имя" />
+    				<input name="phone" type="text" placeholder="Введите телефон" />
+                    <select name="profile">
+                        <option value="0">Профиль работ</option>
+                        <option value="Сантехнические работы">Сантехнические работы</option>
+                        <option value="Электромонтажные работы">Электромонтажные работы</option>
+                        <option value="Плотницкие работы">Плотницкие работы</option>
+                        <option value="Разводка ТВ-кабеля">Разводка ТВ-кабеля</option>
+                        <option value="Усилитель коллективной, эфирной, домашней антенны">Усилитель коллективной, эфирной, домашней антенны</option>
+                        <option value="Установка и подключение бытовой техники">Установка и подключение бытовой техники</option>
+                        <option value="Установка межкомнатных дверей">Установка межкомнатных дверей</option>
+                        <option value="Обивка дверей">Обивка дверей</option>
+                        <option value="Сборка кухни">Сборка кухни</option>
+                        <option value="Ремонт диванов">Ремонт диванов</option>
+                        <option value="Другое">Другое</option>
+                    </select>
+                </div>
+                <div class="right_form">
+				    <textarea placeholder="Ваш комментарий"></textarea>
+                </div>
+                <div class="clear"></div>
+				<a onclick="return sendForm(this);" href="#">ОТПРАВИТЬ ЗАЯВКУ</a>
+			</form>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="block">
+        <div class="content pricelinks">
+            <div class="pricelink xs-6">
+                <div class="icon"><img src="../img2/sample.png" alt=""></div>
+                <div class="caption">установка и подкл. аудио-видео техники</div>
+            </div>
+            <div class="pricelink xs-6">
+                <div class="icon"><img src="../img2/sample.png" alt=""></div>
+                <div class="caption">установка и подкл. аудио-видео техники</div>
+            </div>
+            <div class="pricelink xs-6">
+                <div class="icon"><img src="../img2/sample.png" alt=""></div>
+                <div class="caption">установка и подкл. аудио-видео техники</div>
+            </div>
+            <div class="pricelink xs-6">
+                <div class="icon"><img src="../img2/sample.png" alt=""></div>
+                <div class="caption">установка и подкл. аудио-видео техники</div>
+            </div>
+            <div class="pricelink xs-6">
+                <div class="icon"><img src="../img2/sample.png" alt=""></div>
+                <div class="caption">установка и подкл. аудио-видео техники</div>
+            </div>
+            <div class="pricelink xs-6">
+                <div class="icon"><img src="../img2/sample.png" alt=""></div>
+                <div class="caption">установка и подкл. аудио-видео техники</div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="block">
+        <div class="content why">
+            <h2>ПОЧЕМУ <font>12 735</font> КЛИЕНТОВ ВЫБРАЛИ ИМЕННО НАС:</h2>
+            <div class="circle">1</div><p>У нас <b>фиксированные</b> цены</p>
+            <div class="clear"></div>
+            <div class="circle">2</div><p>Мы оказываем услуги по ремонту квартир <b>7 дней в неделю</b>, а так же в выходные и праздничные дни</p>
+            <div class="clear"></div>
+            <div class="circle">3</div><p><b>Квалифицированный и надежный персонал</b>, только русские (москвичи) с опытом работы <b>от 5 лет</b></p>
+            <div class="clear"></div>
+            <div class="circle">4</div><p>Приезжаем строго в указанный день и час</p>
+            <div class="clear"></div>
+            <div class="circle">5</div><p>Аккуратная и <b>качественная</b> работа</p>
+            <div class="clear"></div>
+            <div class="circle">6</div><p><b>Оперативный</b> выезд в течение <b>40 минут</b></p>
+            <div class="clear"></div>
+            <div class="circle">7</div><p>Гарантия на работы <b>90 дней</b></p>
+            <div class="clear"></div>
+            <div class="circle">8</div><p>Помощь в закупке и доставке материалов</p>
+            <div class="clear"></div>
+            <div class="circle">9</div><p><b>Скидки</b> при повторном обращении</p>
+            <div class="clear"></div>
+            <h2>ПРИ СОТРУДНИЧЕСТВЕ С НАМИ, <font>100%</font> ГАРАНТИЯ</h2>
+            <img src="../img2/masters.jpg" />
+            <ul>
+                <li>Квалифицированный персонал</li>
+                <li>Наши специалисты <span class="red">строго</span> граждане РФ</li>
+                <li><span class="red">Опрятные и приветливые</span> работники</li>
+                <li>Персонал прошедший инструктаж и <span class="red">медосмотр</span></li>
+                <li>Персонал с опытом работы <span class="red">от 5 лет</span></li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="block callback">
+        <div class="content">
+            <h3>ОТПРАВИТЬ ЗАЯВКУ</h3>
+            <span><font>+7 (3412)</font> 24 12 24</span>
+            <div class="clear"></div>
+			<form method="post" action="http://www.mosmasters.ru/callback.php" enctype="multipart/form-data">
+                <div class="left_form">
+    				<input name="name" type="text" placeholder="Ваше имя" />
+    				<input name="phone" type="text" placeholder="Введите телефон" />
+                    <select name="profile">
+                        <option value="0">Профиль работ</option>
+                        <option value="Сантехнические работы">Сантехнические работы</option>
+                        <option value="Электромонтажные работы">Электромонтажные работы</option>
+                        <option value="Плотницкие работы">Плотницкие работы</option>
+                        <option value="Разводка ТВ-кабеля">Разводка ТВ-кабеля</option>
+                        <option value="Усилитель коллективной, эфирной, домашней антенны">Усилитель коллективной, эфирной, домашней антенны</option>
+                        <option value="Установка и подключение бытовой техники">Установка и подключение бытовой техники</option>
+                        <option value="Установка межкомнатных дверей">Установка межкомнатных дверей</option>
+                        <option value="Обивка дверей">Обивка дверей</option>
+                        <option value="Сборка кухни">Сборка кухни</option>
+                        <option value="Ремонт диванов">Ремонт диванов</option>
+                        <option value="Другое">Другое</option>
+                    </select>
+                </div>
+                <div class="right_form">
+				    <textarea placeholder="Ваш комментарий"></textarea>
+                </div>
+                <div class="clear"></div>
+				<a onclick="return sendForm(this);" href="#">ОТПРАВИТЬ ЗАЯВКУ</a>
+			</form>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="block">
+        <div class="content work">
+            <h2>КАК МЫ РАБОТАЕМ:</h2>
+            <div class="one_line"><span>1</span>ЗВОНОК В НАШ ОФИС</div>
+            <div class="two_line"><span>2</span>СОГЛАСОВАНИЕ<br />ОБЪЕМА РАБОТ</div>
+            <div class="one_line" style="padding-right: 0;"><span>3</span>ОФОРМЛЕНИЕ ЗАЯВКИ</div>
+            <div class="two_line"><span>4</span>ВЫБОР ДАТЫ<br />И ВРЕМЕНИ</div>
+            <div class="two_line"><span>5</span>ПЕРЕДАЧА ЗАЯВКИ<br />МАСТЕРУ</div>
+            <div class="two_line" style="padding-right: 0;"><span>6</span>ЗВОНОК МАСТЕРА И<br />УТОЧНЕНИЕ ДЕТАЛЕЙ</div>
+            <div class="two_line"><span>7</span>ВЫЕЗД МАСТЕРА<br />В ТЕЧЕНИИ 1 ЧАСА</div>
+            <div class="two_line"><span>8</span>ВЫПОЛНЕНИЕ<br />РЕМОНТНЫХ РАБОТ</div>
+            <div class="two_line" style="padding-right: 0;"><span class="red">9</span><font>КЛИЕНТ</font> ДОВОЛЕН,<br />ДОВОЛЬНЫ И <font>МЫ!</font></div>            
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="block callback">
+        <div class="content">
+            <h3>ОТПРАВИТЬ ЗАЯВКУ</h3>
+            <span><font>+7 (3412)</font> 24 12 24</span>
+            <div class="clear"></div>
+			<form method="post" action="http://www.mosmasters.ru/callback.php" enctype="multipart/form-data">
+                <div class="left_form">
+    				<input name="name" type="text" placeholder="Ваше имя" />
+    				<input name="phone" type="text" placeholder="Введите телефон" />
+                    <select name="profile">
+                        <option value="0">Профиль работ</option>
+                        <option value="Сантехнические работы">Сантехнические работы</option>
+                        <option value="Электромонтажные работы">Электромонтажные работы</option>
+                        <option value="Плотницкие работы">Плотницкие работы</option>
+                        <option value="Разводка ТВ-кабеля">Разводка ТВ-кабеля</option>
+                        <option value="Усилитель коллективной, эфирной, домашней антенны">Усилитель коллективной, эфирной, домашней антенны</option>
+                        <option value="Установка и подключение бытовой техники">Установка и подключение бытовой техники</option>
+                        <option value="Установка межкомнатных дверей">Установка межкомнатных дверей</option>
+                        <option value="Обивка дверей">Обивка дверей</option>
+                        <option value="Сборка кухни">Сборка кухни</option>
+                        <option value="Ремонт диванов">Ремонт диванов</option>
+                        <option value="Другое">Другое</option>
+                    </select>
+                </div>
+                <div class="right_form">
+				    <textarea name="comment" placeholder="Ваш комментарий"></textarea>
+                </div>
+                <div class="clear"></div>
+				<a onclick="return sendForm(this);" href="#">ОТПРАВИТЬ ЗАЯВКУ</a>
+			</form>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="block footer">
+        <div class="content">
+            <div class="left_footer">
+                <span>УСТАНОВОЧНЫЙ</span>
+                <font>ЦЕНТР</font>
+                <p>Мы делаем комфорт доступнее</p>
+            </div>
+            <div class="center_footer">
+                <span>+7 (3412) 24 12 24</span>
+                <font>Ежедневно с 9.00 до 19.00</font>
+                <p>Выезд мастера в течение 1 часа<br />в любой район Ижевска</p>
+            </div>
+            <div class="right_footer">
+                <p>Выезд мастера в течении<br />1 часа в любой район Ижевска</p>
+                <a class="vk" href="#"></a><a class="fb" href="#"></a><a class="tw" href="#"></a>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</body>
+</html>
