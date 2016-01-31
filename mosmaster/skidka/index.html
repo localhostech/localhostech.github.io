@@ -1,12 +1,11 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-    <title>Скидки</title>
-    <meta name="keywords" content="Установочный центр" />
-    <meta name="description" content="Установочный центр - мы делаем комфорт доступнее" />
+    <title>РЎРєРёРґРєРё</title>
+    <meta name="keywords" content="РЈСЃС‚Р°РЅРѕРІРѕС‡РЅС‹Р№ С†РµРЅС‚СЂ" />
+    <meta name="description" content="РЈСЃС‚Р°РЅРѕРІРѕС‡РЅС‹Р№ С†РµРЅС‚СЂ - РјС‹ РґРµР»Р°РµРј РєРѕРјС„РѕСЂС‚ РґРѕСЃС‚СѓРїРЅРµРµ" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name = "format-detection" content = "telephone=no" />
-    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
     <link rel="stylesheet" type="text/css" href="../style2.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="../countdown/jquery.countdown.css" media="screen" />
     <script src="../jquery.js"></script>
@@ -62,9 +61,9 @@
 		function sendForm(link, form) {
 			$.post("http://www.mosmasters.ru/callback.php", $(link).parent().serialize(), function(){
 				if(form == 2)
-					$(link).parent().html('<p class="sendText">Заявка отправлена. Менеджер с Вами свяжется.</p><p><a style="display:block; background-image:none; color: #a59d97;" class="button2" href="#" onclick="$(this).parent().parent().parent().fadeOut(); return false;">&times; Закрыть</a></p>');
+					$(link).parent().html('<p class="sendText">Р—Р°СЏРІРєР° РѕС‚РїСЂР°РІР»РµРЅР°. РњРµРЅРµРґР¶РµСЂ СЃ Р’Р°РјРё СЃРІСЏР¶РµС‚СЃСЏ.</p><p><a style="display:block; background-image:none; color: #a59d97;" class="button2" href="#" onclick="$(this).parent().parent().parent().fadeOut(); return false;">&times; Р—Р°РєСЂС‹С‚СЊ</a></p>');
 				else
-					$(link).parent().html('<p class="sendText2">Заявка отправлена. Менеджер с Вами свяжется.</p>');
+					$(link).parent().html('<p class="sendText2">Р—Р°СЏРІРєР° РѕС‚РїСЂР°РІР»РµРЅР°. РњРµРЅРµРґР¶РµСЂ СЃ Р’Р°РјРё СЃРІСЏР¶РµС‚СЃСЏ.</p>');
 				setTimeout('$("#subis").hide()', '3000');
 			}, 'json');
 
@@ -124,12 +123,12 @@
     width: 366px;
     z-index: 10;">
     <form style="margin-top: 0; text-align: center;" class="contacts_form" name="form1" id="addeditform" method="post" action="http://www.mosmasters.ru/callback.php" enctype="multipart/form-data">
-        <input style="padding:10px; margin:10px;" onblur="if(this.value==&quot;&quot;){ this.value=&quot;ФИО&quot;; }" onfocus="if(this.value==&quot;ФИО&quot;) { this.value=&quot;&quot;; }" type="text" class="textFront" id="name_" tabindex="1" validator="required" value="ФИО" name="name" style="border: 1px solid rgb(204, 204, 204);" /><br />
-        <input style="padding:10px; margin:10px;" onblur="if(this.value==&quot;&quot;){ this.value=&quot;Телефон&quot;; }" onfocus="if(this.value==&quot;Телефон&quot;) { this.value=&quot;&quot;; }" type="text" class="textFront" id="phone_" tabindex="1" value="Телефон" name="phone" style="border: 1px solid rgb(204, 204, 204);" /><br />
+        <input style="padding:10px; margin:10px;" onblur="if(this.value==&quot;&quot;){ this.value=&quot;Р¤РРћ&quot;; }" onfocus="if(this.value==&quot;Р¤РРћ&quot;) { this.value=&quot;&quot;; }" type="text" class="textFront" id="name_" tabindex="1" validator="required" value="Р¤РРћ" name="name" style="border: 1px solid rgb(204, 204, 204);" /><br />
+        <input style="padding:10px; margin:10px;" onblur="if(this.value==&quot;&quot;){ this.value=&quot;РўРµР»РµС„РѕРЅ&quot;; }" onfocus="if(this.value==&quot;РўРµР»РµС„РѕРЅ&quot;) { this.value=&quot;&quot;; }" type="text" class="textFront" id="phone_" tabindex="1" value="РўРµР»РµС„РѕРЅ" name="phone" style="border: 1px solid rgb(204, 204, 204);" /><br />
         <input style="padding:10px; margin:10px;" onblur="if(this.value==&quot;&quot;){ this.value=&quot;Email&quot;; }" onfocus="if(this.value==&quot;Email&quot;) { this.value=&quot;&quot;; }" type="text" class="textFront" id="email_" tabindex="1" value="Email" name="email" style="border: 1px solid rgb(204, 204, 204);" /><br /><br />
 		<input type="hidden" value="" id="profile_" name="profile" />
-        <a style="margin-left:55px; background-image:none; float:left; color: #ffea75;" class="button2" href="#" onclick="return sendForm(this, 2);">Отправить</a>
-        <a style="margin-left:80px; background-image:none; float:left; color: #a59d97;" class="button2" href="#" onclick="$(this).parent().parent().fadeOut('fast'); return false;">&times; Закрыть</a>
+        <a style="margin-left:55px; background-image:none; float:left; color: #ffea75;" class="button2" href="#" onclick="return sendForm(this, 2);">РћС‚РїСЂР°РІРёС‚СЊ</a>
+        <a style="margin-left:80px; background-image:none; float:left; color: #a59d97;" class="button2" href="#" onclick="$(this).parent().parent().fadeOut('fast'); return false;">&times; Р—Р°РєСЂС‹С‚СЊ</a>
         <div class="clear"></div>
     </form>
 </div>
@@ -137,19 +136,19 @@
         <div class="content">
             <div class="left">
                 <a href="/"><img class="logo" src="../img2/logotip.svg" /></a>
-                <img class="completed hidden-xs" src="../img2/completed.png" /><span class="hidden-xs">10000</span><p class="hidden-xs">уже выполненных заказов</p>
+                <img class="completed hidden-xs" src="../img2/completed.png" /><span class="hidden-xs">10000</span><p class="hidden-xs">СѓР¶Рµ РІС‹РїРѕР»РЅРµРЅРЅС‹С… Р·Р°РєР°Р·РѕРІ</p>
             </div>
             <div class="right">
                 <span><font>+7 (3412)</font> 24 12 24</span>
-                <a onclick="return swsubis();" href="#">ЗАКАЗАТЬ ОБРАТНЫЙ ЗВОНОК</a>
-                <font>Прием заявок с 9 до 19.00</font>
+                <a onclick="return swsubis();" href="#">Р—РђРљРђР—РђРўР¬ РћР‘Р РђРўРќР«Р™ Р—Р’РћРќРћРљ</a>
+                <font>РџСЂРёРµРј Р·Р°СЏРІРѕРє СЃ 9 РґРѕ 19.00</font>
             </div>
             <div class="clear"></div>
         </div>
     </div>
     <div class="block">
         <div class="content">
-            <h2>УСТАНОВКА ЛЮБОЙ ТЕХНИКИ И КОНДИЦИОНЕРОВ</h2>
+            <h2>РЈРЎРўРђРќРћР’РљРђ Р›Р®Р‘РћР™ РўР•РҐРќРРљР Р РљРћРќР”РР¦РРћРќР•Р РћР’</h2>
             <div class="media">
                 <div class="extra_main">
                     <img class="main_image active_img" src="../img2/main_1.jpg" />
@@ -159,97 +158,97 @@
                 </div>
                 <div class="right-block">
                     <form method="post" action="http://www.mosmasters.ru/callback.php" enctype="multipart/form-data">
-                        <span class="title">ОТПРАВИТЬ ЗАЯВКУ</span>
-                        <input name="name" type="text" placeholder="Ваше имя" />
-                        <input name="phone" type="text" placeholder="Введите телефон" />
+                        <span class="title">РћРўРџР РђР’РРўР¬ Р—РђРЇР’РљРЈ</span>
+                        <input name="name" type="text" placeholder="Р’Р°С€Рµ РёРјСЏ" />
+                        <input name="phone" type="text" placeholder="Р’РІРµРґРёС‚Рµ С‚РµР»РµС„РѕРЅ" />
                         <select name="profile">
-                            <option value="0">Профиль работ</option>
-                            <option value="Сантехнические работы">Сантехнические работы</option>
-                            <option value="Электромонтажные работы">Электромонтажные работы</option>
-                            <option value="Плотницкие работы">Плотницкие работы</option>
-                            <option value="Разводка ТВ-кабеля">Разводка ТВ-кабеля</option>
-                            <option value="Усилитель коллективной, эфирной, домашней антенны">Усилитель коллективной, эфирной, домашней антенны</option>
-                            <option value="Установка и подключение бытовой техники">Установка и подключение бытовой техники</option>
-                            <option value="Установка межкомнатных дверей">Установка межкомнатных дверей</option>
-                            <option value="Обивка дверей">Обивка дверей</option>
-                            <option value="Сборка кухни">Сборка кухни</option>
-                            <option value="Ремонт диванов">Ремонт диванов</option>
-                            <option value="Другое">Другое</option>
+                            <option value="0">РџСЂРѕС„РёР»СЊ СЂР°Р±РѕС‚</option>
+                            <option value="РЎР°РЅС‚РµС…РЅРёС‡РµСЃРєРёРµ СЂР°Р±РѕС‚С‹">РЎР°РЅС‚РµС…РЅРёС‡РµСЃРєРёРµ СЂР°Р±РѕС‚С‹</option>
+                            <option value="Р­Р»РµРєС‚СЂРѕРјРѕРЅС‚Р°Р¶РЅС‹Рµ СЂР°Р±РѕС‚С‹">Р­Р»РµРєС‚СЂРѕРјРѕРЅС‚Р°Р¶РЅС‹Рµ СЂР°Р±РѕС‚С‹</option>
+                            <option value="РџР»РѕС‚РЅРёС†РєРёРµ СЂР°Р±РѕС‚С‹">РџР»РѕС‚РЅРёС†РєРёРµ СЂР°Р±РѕС‚С‹</option>
+                            <option value="Р Р°Р·РІРѕРґРєР° РўР’-РєР°Р±РµР»СЏ">Р Р°Р·РІРѕРґРєР° РўР’-РєР°Р±РµР»СЏ</option>
+                            <option value="РЈСЃРёР»РёС‚РµР»СЊ РєРѕР»Р»РµРєС‚РёРІРЅРѕР№, СЌС„РёСЂРЅРѕР№, РґРѕРјР°С€РЅРµР№ Р°РЅС‚РµРЅРЅС‹">РЈСЃРёР»РёС‚РµР»СЊ РєРѕР»Р»РµРєС‚РёРІРЅРѕР№, СЌС„РёСЂРЅРѕР№, РґРѕРјР°С€РЅРµР№ Р°РЅС‚РµРЅРЅС‹</option>
+                            <option value="РЈСЃС‚Р°РЅРѕРІРєР° Рё РїРѕРґРєР»СЋС‡РµРЅРёРµ Р±С‹С‚РѕРІРѕР№ С‚РµС…РЅРёРєРё">РЈСЃС‚Р°РЅРѕРІРєР° Рё РїРѕРґРєР»СЋС‡РµРЅРёРµ Р±С‹С‚РѕРІРѕР№ С‚РµС…РЅРёРєРё</option>
+                            <option value="РЈСЃС‚Р°РЅРѕРІРєР° РјРµР¶РєРѕРјРЅР°С‚РЅС‹С… РґРІРµСЂРµР№">РЈСЃС‚Р°РЅРѕРІРєР° РјРµР¶РєРѕРјРЅР°С‚РЅС‹С… РґРІРµСЂРµР№</option>
+                            <option value="РћР±РёРІРєР° РґРІРµСЂРµР№">РћР±РёРІРєР° РґРІРµСЂРµР№</option>
+                            <option value="РЎР±РѕСЂРєР° РєСѓС…РЅРё">РЎР±РѕСЂРєР° РєСѓС…РЅРё</option>
+                            <option value="Р РµРјРѕРЅС‚ РґРёРІР°РЅРѕРІ">Р РµРјРѕРЅС‚ РґРёРІР°РЅРѕРІ</option>
+                            <option value="Р”СЂСѓРіРѕРµ">Р”СЂСѓРіРѕРµ</option>
                         </select>
-                        <a onclick="return sendForm(this);" href="#">ОТПРАВИТЬ ЗАЯВКУ</a>
+                        <a onclick="return sendForm(this);" href="#">РћРўРџР РђР’РРўР¬ Р—РђРЇР’РљРЈ</a>
                     </form>
                 </div>
             </div>
             <div class="clear"></div>
             <div class="discount">
-                <h3>АКЦИЯ!  Пример-Скидка 20% на ВСЕ РАБОТЫ!</h3>
-                <span>До конца осталось: </span>
+                <h3>РђРљР¦РРЇ!  РџСЂРёРјРµСЂ-РЎРєРёРґРєР° 20% РЅР° Р’РЎР• Р РђР‘РћРўР«!</h3>
+                <span>Р”Рѕ РєРѕРЅС†Р° РѕСЃС‚Р°Р»РѕСЃСЊ: </span>
                 <div id="countdown"></div>
             </div>
             <div class="clear"></div>
-            <h2>НАШИ ПРЕИМУЩЕСТВА</h2>
-            <div class="better1">ФИКСИРОВАННАЯ<br />ЦЕНА</div>
-            <div class="better2">РАСЧЕТ СТОИМОСТИ<br />РАБОТ ПО ТЕЛЕФОНУ</div>
-            <div class="better3">РАБОТАЕМ 7 ДНЕЙ В<br />НЕДЕЛЮ ВКЛЮЧАЯ<br />ПРАЗДНИЧНЫЕ ДНИ</div>
-            <div class="better4">НИКАКИХ ПЕРЕПЛАТ<br />ЗА СРОЧНОСТЬ</div>
-            <div class="better5">ВЫЕЗД<br />В ТЕЧЕНИЕ 1 ЧАСА</div>
+            <h2>РќРђРЁР РџР Р•РРњРЈР©Р•РЎРўР’Рђ</h2>
+            <div class="better1">Р¤РРљРЎРР РћР’РђРќРќРђРЇ<br />Р¦Р•РќРђ</div>
+            <div class="better2">Р РђРЎР§Р•Рў РЎРўРћРРњРћРЎРўР<br />Р РђР‘РћРў РџРћ РўР•Р›Р•Р¤РћРќРЈ</div>
+            <div class="better3">Р РђР‘РћРўРђР•Рњ 7 Р”РќР•Р™ Р’<br />РќР•Р”Р•Р›Р® Р’РљР›Р®Р§РђРЇ<br />РџР РђР—Р”РќРР§РќР«Р• Р”РќР</div>
+            <div class="better4">РќРРљРђРљРРҐ РџР•Р Р•РџР›РђРў<br />Р—Рђ РЎР РћР§РќРћРЎРўР¬</div>
+            <div class="better5">Р’Р«Р•Р—Р”<br />Р’ РўР•Р§Р•РќРР• 1 Р§РђРЎРђ</div>
             <div class="clear"></div>
-            <h2>О НАС</h2>
+            <h2>Рћ РќРђРЎ</h2>
         </div>
     </div>
     <div class="block about">
         <div class="content">
-            <p><span class="big_text">Профессиональные мастера</span><br />
-            и квалифицированные специалисты, в функции которых входит содержание помещений<br />в надлежащем виде, а также <span class="big_text">весь необходимый инструмент</span></p>
+            <p><span class="big_text">РџСЂРѕС„РµСЃСЃРёРѕРЅР°Р»СЊРЅС‹Рµ РјР°СЃС‚РµСЂР°</span><br />
+            Рё РєРІР°Р»РёС„РёС†РёСЂРѕРІР°РЅРЅС‹Рµ СЃРїРµС†РёР°Р»РёСЃС‚С‹, РІ С„СѓРЅРєС†РёРё РєРѕС‚РѕСЂС‹С… РІС…РѕРґРёС‚ СЃРѕРґРµСЂР¶Р°РЅРёРµ РїРѕРјРµС‰РµРЅРёР№<br />РІ РЅР°РґР»РµР¶Р°С‰РµРј РІРёРґРµ, Р° С‚Р°РєР¶Рµ <span class="big_text">РІРµСЃСЊ РЅРµРѕР±С…РѕРґРёРјС‹Р№ РёРЅСЃС‚СЂСѓРјРµРЅС‚</span></p>
             <div class="left_about">
-                <p><span class="big_text">7 лет на рынке</span> предоставляем<br />организациям и частным лицам услуги<br />по электромонтажным и сантехническим<br />работам, а так же слесарным и плотницким<br />работам, замене замков и установке<br />межкомнатных дверей</p> 
+                <p><span class="big_text">7 Р»РµС‚ РЅР° СЂС‹РЅРєРµ</span> РїСЂРµРґРѕСЃС‚Р°РІР»СЏРµРј<br />РѕСЂРіР°РЅРёР·Р°С†РёСЏРј Рё С‡Р°СЃС‚РЅС‹Рј Р»РёС†Р°Рј СѓСЃР»СѓРіРё<br />РїРѕ СЌР»РµРєС‚СЂРѕРјРѕРЅС‚Р°Р¶РЅС‹Рј Рё СЃР°РЅС‚РµС…РЅРёС‡РµСЃРєРёРј<br />СЂР°Р±РѕС‚Р°Рј, Р° С‚Р°Рє Р¶Рµ СЃР»РµСЃР°СЂРЅС‹Рј Рё РїР»РѕС‚РЅРёС†РєРёРј<br />СЂР°Р±РѕС‚Р°Рј, Р·Р°РјРµРЅРµ Р·Р°РјРєРѕРІ Рё СѓСЃС‚Р°РЅРѕРІРєРµ<br />РјРµР¶РєРѕРјРЅР°С‚РЅС‹С… РґРІРµСЂРµР№</p> 
             </div>
             <div class="right_about">
-                <p>Мы выполняем <span class="big_text">5 000 заказов<br />в год</span> по сантехнике и электрике<br />и работаем <span class="big_text">без выходных</span></p>
+                <p>РњС‹ РІС‹РїРѕР»РЅСЏРµРј <span class="big_text">5 000 Р·Р°РєР°Р·РѕРІ<br />РІ РіРѕРґ</span> РїРѕ СЃР°РЅС‚РµС…РЅРёРєРµ Рё СЌР»РµРєС‚СЂРёРєРµ<br />Рё СЂР°Р±РѕС‚Р°РµРј <span class="big_text">Р±РµР· РІС‹С…РѕРґРЅС‹С…</span></p>
             </div>
             <div class="clear"></div>
         </div>
     </div>
     <div class="block">
         <div class="content">
-            <h2>НАШИ УСЛУГИ</h2>
-            <div class="service">Сантехнические работы<br />от <span>200 р.</span></div>
-            <div class="service">Установка бытовой техники<br />от <span>500 р.</span></div>
-            <div class="service">Установка кондиционеров<br />от <span>5000 р.</span></div>
-            <div class="service">Мастер на час<br /><span>500 р.</span></div>
-            <div class="service_last">Сборка мебели<br />от <span>500 р.</span></div>
+            <h2>РќРђРЁР РЈРЎР›РЈР“Р</h2>
+            <div class="service">РЎР°РЅС‚РµС…РЅРёС‡РµСЃРєРёРµ СЂР°Р±РѕС‚С‹<br />РѕС‚ <span>200 СЂ.</span></div>
+            <div class="service">РЈСЃС‚Р°РЅРѕРІРєР° Р±С‹С‚РѕРІРѕР№ С‚РµС…РЅРёРєРё<br />РѕС‚ <span>500 СЂ.</span></div>
+            <div class="service">РЈСЃС‚Р°РЅРѕРІРєР° РєРѕРЅРґРёС†РёРѕРЅРµСЂРѕРІ<br />РѕС‚ <span>5000 СЂ.</span></div>
+            <div class="service">РњР°СЃС‚РµСЂ РЅР° С‡Р°СЃ<br /><span>500 СЂ.</span></div>
+            <div class="service_last">РЎР±РѕСЂРєР° РјРµР±РµР»Рё<br />РѕС‚ <span>500 СЂ.</span></div>
             <div class="clear"></div>
         </div>
     </div>
     <div class="block callback">
         <div class="content">
-            <h3>ОТПРАВИТЬ ЗАЯВКУ</h3>
+            <h3>РћРўРџР РђР’РРўР¬ Р—РђРЇР’РљРЈ</h3>
             <span><font>+7 (3412)</font> 24 12 24</span>
             <div class="clear"></div>
 			<form method="post" action="http://www.mosmasters.ru/callback.php" enctype="multipart/form-data">
                 <div class="left_form">
-    				<input name="name" type="text" placeholder="Ваше имя" />
-    				<input name="phone" type="text" placeholder="Введите телефон" />
+    				<input name="name" type="text" placeholder="Р’Р°С€Рµ РёРјСЏ" />
+    				<input name="phone" type="text" placeholder="Р’РІРµРґРёС‚Рµ С‚РµР»РµС„РѕРЅ" />
                     <select name="profile">
-                        <option value="0">Профиль работ</option>
-                        <option value="Сантехнические работы">Сантехнические работы</option>
-                        <option value="Электромонтажные работы">Электромонтажные работы</option>
-                        <option value="Плотницкие работы">Плотницкие работы</option>
-                        <option value="Разводка ТВ-кабеля">Разводка ТВ-кабеля</option>
-                        <option value="Усилитель коллективной, эфирной, домашней антенны">Усилитель коллективной, эфирной, домашней антенны</option>
-                        <option value="Установка и подключение бытовой техники">Установка и подключение бытовой техники</option>
-                        <option value="Установка межкомнатных дверей">Установка межкомнатных дверей</option>
-                        <option value="Обивка дверей">Обивка дверей</option>
-                        <option value="Сборка кухни">Сборка кухни</option>
-                        <option value="Ремонт диванов">Ремонт диванов</option>
-                        <option value="Другое">Другое</option>
+                        <option value="0">РџСЂРѕС„РёР»СЊ СЂР°Р±РѕС‚</option>
+                        <option value="РЎР°РЅС‚РµС…РЅРёС‡РµСЃРєРёРµ СЂР°Р±РѕС‚С‹">РЎР°РЅС‚РµС…РЅРёС‡РµСЃРєРёРµ СЂР°Р±РѕС‚С‹</option>
+                        <option value="Р­Р»РµРєС‚СЂРѕРјРѕРЅС‚Р°Р¶РЅС‹Рµ СЂР°Р±РѕС‚С‹">Р­Р»РµРєС‚СЂРѕРјРѕРЅС‚Р°Р¶РЅС‹Рµ СЂР°Р±РѕС‚С‹</option>
+                        <option value="РџР»РѕС‚РЅРёС†РєРёРµ СЂР°Р±РѕС‚С‹">РџР»РѕС‚РЅРёС†РєРёРµ СЂР°Р±РѕС‚С‹</option>
+                        <option value="Р Р°Р·РІРѕРґРєР° РўР’-РєР°Р±РµР»СЏ">Р Р°Р·РІРѕРґРєР° РўР’-РєР°Р±РµР»СЏ</option>
+                        <option value="РЈСЃРёР»РёС‚РµР»СЊ РєРѕР»Р»РµРєС‚РёРІРЅРѕР№, СЌС„РёСЂРЅРѕР№, РґРѕРјР°С€РЅРµР№ Р°РЅС‚РµРЅРЅС‹">РЈСЃРёР»РёС‚РµР»СЊ РєРѕР»Р»РµРєС‚РёРІРЅРѕР№, СЌС„РёСЂРЅРѕР№, РґРѕРјР°С€РЅРµР№ Р°РЅС‚РµРЅРЅС‹</option>
+                        <option value="РЈСЃС‚Р°РЅРѕРІРєР° Рё РїРѕРґРєР»СЋС‡РµРЅРёРµ Р±С‹С‚РѕРІРѕР№ С‚РµС…РЅРёРєРё">РЈСЃС‚Р°РЅРѕРІРєР° Рё РїРѕРґРєР»СЋС‡РµРЅРёРµ Р±С‹С‚РѕРІРѕР№ С‚РµС…РЅРёРєРё</option>
+                        <option value="РЈСЃС‚Р°РЅРѕРІРєР° РјРµР¶РєРѕРјРЅР°С‚РЅС‹С… РґРІРµСЂРµР№">РЈСЃС‚Р°РЅРѕРІРєР° РјРµР¶РєРѕРјРЅР°С‚РЅС‹С… РґРІРµСЂРµР№</option>
+                        <option value="РћР±РёРІРєР° РґРІРµСЂРµР№">РћР±РёРІРєР° РґРІРµСЂРµР№</option>
+                        <option value="РЎР±РѕСЂРєР° РєСѓС…РЅРё">РЎР±РѕСЂРєР° РєСѓС…РЅРё</option>
+                        <option value="Р РµРјРѕРЅС‚ РґРёРІР°РЅРѕРІ">Р РµРјРѕРЅС‚ РґРёРІР°РЅРѕРІ</option>
+                        <option value="Р”СЂСѓРіРѕРµ">Р”СЂСѓРіРѕРµ</option>
                     </select>
                 </div>
                 <div class="right_form">
-				    <textarea placeholder="Ваш комментарий"></textarea>
+				    <textarea placeholder="Р’Р°С€ РєРѕРјРјРµРЅС‚Р°СЂРёР№"></textarea>
                 </div>
                 <div class="clear"></div>
-				<a onclick="return sendForm(this);" href="#">ОТПРАВИТЬ ЗАЯВКУ</a>
+				<a onclick="return sendForm(this);" href="#">РћРўРџР РђР’РРўР¬ Р—РђРЇР’РљРЈ</a>
 			</form>
         </div>
         <div class="clear"></div>
@@ -258,141 +257,141 @@
         <div class="content pricelinks">
             <div class="pricelink xs-6">
                 <div class="icon"><img src="../img2/sample.png" alt=""></div>
-                <div class="caption">установка и подкл. аудио-видео техники</div>
+                <div class="caption">СѓСЃС‚Р°РЅРѕРІРєР° Рё РїРѕРґРєР». Р°СѓРґРёРѕ-РІРёРґРµРѕ С‚РµС…РЅРёРєРё</div>
             </div>
             <div class="pricelink xs-6">
                 <div class="icon"><img src="../img2/sample.png" alt=""></div>
-                <div class="caption">установка и подкл. аудио-видео техники</div>
+                <div class="caption">СѓСЃС‚Р°РЅРѕРІРєР° Рё РїРѕРґРєР». Р°СѓРґРёРѕ-РІРёРґРµРѕ С‚РµС…РЅРёРєРё</div>
             </div>
             <div class="pricelink xs-6">
                 <div class="icon"><img src="../img2/sample.png" alt=""></div>
-                <div class="caption">установка и подкл. аудио-видео техники</div>
+                <div class="caption">СѓСЃС‚Р°РЅРѕРІРєР° Рё РїРѕРґРєР». Р°СѓРґРёРѕ-РІРёРґРµРѕ С‚РµС…РЅРёРєРё</div>
             </div>
             <div class="pricelink xs-6">
                 <div class="icon"><img src="../img2/sample.png" alt=""></div>
-                <div class="caption">установка и подкл. аудио-видео техники</div>
+                <div class="caption">СѓСЃС‚Р°РЅРѕРІРєР° Рё РїРѕРґРєР». Р°СѓРґРёРѕ-РІРёРґРµРѕ С‚РµС…РЅРёРєРё</div>
             </div>
             <div class="pricelink xs-6">
                 <div class="icon"><img src="../img2/sample.png" alt=""></div>
-                <div class="caption">установка и подкл. аудио-видео техники</div>
+                <div class="caption">СѓСЃС‚Р°РЅРѕРІРєР° Рё РїРѕРґРєР». Р°СѓРґРёРѕ-РІРёРґРµРѕ С‚РµС…РЅРёРєРё</div>
             </div>
             <div class="pricelink xs-6">
                 <div class="icon"><img src="../img2/sample.png" alt=""></div>
-                <div class="caption">установка и подкл. аудио-видео техники</div>
+                <div class="caption">СѓСЃС‚Р°РЅРѕРІРєР° Рё РїРѕРґРєР». Р°СѓРґРёРѕ-РІРёРґРµРѕ С‚РµС…РЅРёРєРё</div>
             </div>
         </div>
         <div class="clear"></div>
     </div>
     <div class="block">
         <div class="content why">
-            <h2>ПОЧЕМУ <font>12 735</font> КЛИЕНТОВ ВЫБРАЛИ ИМЕННО НАС:</h2>
-            <div class="circle">1</div><p>У нас <b>фиксированные</b> цены</p>
+            <h2>РџРћР§Р•РњРЈ <font>12 735</font> РљР›РР•РќРўРћР’ Р’Р«Р‘Р РђР›Р РРњР•РќРќРћ РќРђРЎ:</h2>
+            <div class="circle">1</div><p>РЈ РЅР°СЃ <b>С„РёРєСЃРёСЂРѕРІР°РЅРЅС‹Рµ</b> С†РµРЅС‹</p>
             <div class="clear"></div>
-            <div class="circle">2</div><p>Мы оказываем услуги по ремонту квартир <b>7 дней в неделю</b>, а так же в выходные и праздничные дни</p>
+            <div class="circle">2</div><p>РњС‹ РѕРєР°Р·С‹РІР°РµРј СѓСЃР»СѓРіРё РїРѕ СЂРµРјРѕРЅС‚Сѓ РєРІР°СЂС‚РёСЂ <b>7 РґРЅРµР№ РІ РЅРµРґРµР»СЋ</b>, Р° С‚Р°Рє Р¶Рµ РІ РІС‹С…РѕРґРЅС‹Рµ Рё РїСЂР°Р·РґРЅРёС‡РЅС‹Рµ РґРЅРё</p>
             <div class="clear"></div>
-            <div class="circle">3</div><p><b>Квалифицированный и надежный персонал</b>, только русские (москвичи) с опытом работы <b>от 5 лет</b></p>
+            <div class="circle">3</div><p><b>РљРІР°Р»РёС„РёС†РёСЂРѕРІР°РЅРЅС‹Р№ Рё РЅР°РґРµР¶РЅС‹Р№ РїРµСЂСЃРѕРЅР°Р»</b>, С‚РѕР»СЊРєРѕ СЂСѓСЃСЃРєРёРµ (РјРѕСЃРєРІРёС‡Рё) СЃ РѕРїС‹С‚РѕРј СЂР°Р±РѕС‚С‹ <b>РѕС‚ 5 Р»РµС‚</b></p>
             <div class="clear"></div>
-            <div class="circle">4</div><p>Приезжаем строго в указанный день и час</p>
+            <div class="circle">4</div><p>РџСЂРёРµР·Р¶Р°РµРј СЃС‚СЂРѕРіРѕ РІ СѓРєР°Р·Р°РЅРЅС‹Р№ РґРµРЅСЊ Рё С‡Р°СЃ</p>
             <div class="clear"></div>
-            <div class="circle">5</div><p>Аккуратная и <b>качественная</b> работа</p>
+            <div class="circle">5</div><p>РђРєРєСѓСЂР°С‚РЅР°СЏ Рё <b>РєР°С‡РµСЃС‚РІРµРЅРЅР°СЏ</b> СЂР°Р±РѕС‚Р°</p>
             <div class="clear"></div>
-            <div class="circle">6</div><p><b>Оперативный</b> выезд в течение <b>40 минут</b></p>
+            <div class="circle">6</div><p><b>РћРїРµСЂР°С‚РёРІРЅС‹Р№</b> РІС‹РµР·Рґ РІ С‚РµС‡РµРЅРёРµ <b>40 РјРёРЅСѓС‚</b></p>
             <div class="clear"></div>
-            <div class="circle">7</div><p>Гарантия на работы <b>90 дней</b></p>
+            <div class="circle">7</div><p>Р“Р°СЂР°РЅС‚РёСЏ РЅР° СЂР°Р±РѕС‚С‹ <b>90 РґРЅРµР№</b></p>
             <div class="clear"></div>
-            <div class="circle">8</div><p>Помощь в закупке и доставке материалов</p>
+            <div class="circle">8</div><p>РџРѕРјРѕС‰СЊ РІ Р·Р°РєСѓРїРєРµ Рё РґРѕСЃС‚Р°РІРєРµ РјР°С‚РµСЂРёР°Р»РѕРІ</p>
             <div class="clear"></div>
-            <div class="circle">9</div><p><b>Скидки</b> при повторном обращении</p>
+            <div class="circle">9</div><p><b>РЎРєРёРґРєРё</b> РїСЂРё РїРѕРІС‚РѕСЂРЅРѕРј РѕР±СЂР°С‰РµРЅРёРё</p>
             <div class="clear"></div>
-            <h2>ПРИ СОТРУДНИЧЕСТВЕ С НАМИ, <font>100%</font> ГАРАНТИЯ</h2>
+            <h2>РџР Р РЎРћРўР РЈР”РќРР§Р•РЎРўР’Р• РЎ РќРђРњР, <font>100%</font> Р“РђР РђРќРўРРЇ</h2>
             <img src="../img2/masters.jpg" />
             <ul>
-                <li>Квалифицированный персонал</li>
-                <li>Наши специалисты <span class="red">строго</span> граждане РФ</li>
-                <li><span class="red">Опрятные и приветливые</span> работники</li>
-                <li>Персонал прошедший инструктаж и <span class="red">медосмотр</span></li>
-                <li>Персонал с опытом работы <span class="red">от 5 лет</span></li>
+                <li>РљРІР°Р»РёС„РёС†РёСЂРѕРІР°РЅРЅС‹Р№ РїРµСЂСЃРѕРЅР°Р»</li>
+                <li>РќР°С€Рё СЃРїРµС†РёР°Р»РёСЃС‚С‹ <span class="red">СЃС‚СЂРѕРіРѕ</span> РіСЂР°Р¶РґР°РЅРµ Р Р¤</li>
+                <li><span class="red">РћРїСЂСЏС‚РЅС‹Рµ Рё РїСЂРёРІРµС‚Р»РёРІС‹Рµ</span> СЂР°Р±РѕС‚РЅРёРєРё</li>
+                <li>РџРµСЂСЃРѕРЅР°Р» РїСЂРѕС€РµРґС€РёР№ РёРЅСЃС‚СЂСѓРєС‚Р°Р¶ Рё <span class="red">РјРµРґРѕСЃРјРѕС‚СЂ</span></li>
+                <li>РџРµСЂСЃРѕРЅР°Р» СЃ РѕРїС‹С‚РѕРј СЂР°Р±РѕС‚С‹ <span class="red">РѕС‚ 5 Р»РµС‚</span></li>
             </ul>
         </div>
         <div class="clear"></div>
     </div>
     <div class="block callback">
         <div class="content">
-            <h3>ОТПРАВИТЬ ЗАЯВКУ</h3>
+            <h3>РћРўРџР РђР’РРўР¬ Р—РђРЇР’РљРЈ</h3>
             <span><font>+7 (3412)</font> 24 12 24</span>
             <div class="clear"></div>
 			<form method="post" action="http://www.mosmasters.ru/callback.php" enctype="multipart/form-data">
                 <div class="left_form">
-    				<input name="name" type="text" placeholder="Ваше имя" />
-    				<input name="phone" type="text" placeholder="Введите телефон" />
+    				<input name="name" type="text" placeholder="Р’Р°С€Рµ РёРјСЏ" />
+    				<input name="phone" type="text" placeholder="Р’РІРµРґРёС‚Рµ С‚РµР»РµС„РѕРЅ" />
                     <select name="profile">
-                        <option value="0">Профиль работ</option>
-                        <option value="Сантехнические работы">Сантехнические работы</option>
-                        <option value="Электромонтажные работы">Электромонтажные работы</option>
-                        <option value="Плотницкие работы">Плотницкие работы</option>
-                        <option value="Разводка ТВ-кабеля">Разводка ТВ-кабеля</option>
-                        <option value="Усилитель коллективной, эфирной, домашней антенны">Усилитель коллективной, эфирной, домашней антенны</option>
-                        <option value="Установка и подключение бытовой техники">Установка и подключение бытовой техники</option>
-                        <option value="Установка межкомнатных дверей">Установка межкомнатных дверей</option>
-                        <option value="Обивка дверей">Обивка дверей</option>
-                        <option value="Сборка кухни">Сборка кухни</option>
-                        <option value="Ремонт диванов">Ремонт диванов</option>
-                        <option value="Другое">Другое</option>
+                        <option value="0">РџСЂРѕС„РёР»СЊ СЂР°Р±РѕС‚</option>
+                        <option value="РЎР°РЅС‚РµС…РЅРёС‡РµСЃРєРёРµ СЂР°Р±РѕС‚С‹">РЎР°РЅС‚РµС…РЅРёС‡РµСЃРєРёРµ СЂР°Р±РѕС‚С‹</option>
+                        <option value="Р­Р»РµРєС‚СЂРѕРјРѕРЅС‚Р°Р¶РЅС‹Рµ СЂР°Р±РѕС‚С‹">Р­Р»РµРєС‚СЂРѕРјРѕРЅС‚Р°Р¶РЅС‹Рµ СЂР°Р±РѕС‚С‹</option>
+                        <option value="РџР»РѕС‚РЅРёС†РєРёРµ СЂР°Р±РѕС‚С‹">РџР»РѕС‚РЅРёС†РєРёРµ СЂР°Р±РѕС‚С‹</option>
+                        <option value="Р Р°Р·РІРѕРґРєР° РўР’-РєР°Р±РµР»СЏ">Р Р°Р·РІРѕРґРєР° РўР’-РєР°Р±РµР»СЏ</option>
+                        <option value="РЈСЃРёР»РёС‚РµР»СЊ РєРѕР»Р»РµРєС‚РёРІРЅРѕР№, СЌС„РёСЂРЅРѕР№, РґРѕРјР°С€РЅРµР№ Р°РЅС‚РµРЅРЅС‹">РЈСЃРёР»РёС‚РµР»СЊ РєРѕР»Р»РµРєС‚РёРІРЅРѕР№, СЌС„РёСЂРЅРѕР№, РґРѕРјР°С€РЅРµР№ Р°РЅС‚РµРЅРЅС‹</option>
+                        <option value="РЈСЃС‚Р°РЅРѕРІРєР° Рё РїРѕРґРєР»СЋС‡РµРЅРёРµ Р±С‹С‚РѕРІРѕР№ С‚РµС…РЅРёРєРё">РЈСЃС‚Р°РЅРѕРІРєР° Рё РїРѕРґРєР»СЋС‡РµРЅРёРµ Р±С‹С‚РѕРІРѕР№ С‚РµС…РЅРёРєРё</option>
+                        <option value="РЈСЃС‚Р°РЅРѕРІРєР° РјРµР¶РєРѕРјРЅР°С‚РЅС‹С… РґРІРµСЂРµР№">РЈСЃС‚Р°РЅРѕРІРєР° РјРµР¶РєРѕРјРЅР°С‚РЅС‹С… РґРІРµСЂРµР№</option>
+                        <option value="РћР±РёРІРєР° РґРІРµСЂРµР№">РћР±РёРІРєР° РґРІРµСЂРµР№</option>
+                        <option value="РЎР±РѕСЂРєР° РєСѓС…РЅРё">РЎР±РѕСЂРєР° РєСѓС…РЅРё</option>
+                        <option value="Р РµРјРѕРЅС‚ РґРёРІР°РЅРѕРІ">Р РµРјРѕРЅС‚ РґРёРІР°РЅРѕРІ</option>
+                        <option value="Р”СЂСѓРіРѕРµ">Р”СЂСѓРіРѕРµ</option>
                     </select>
                 </div>
                 <div class="right_form">
-				    <textarea placeholder="Ваш комментарий"></textarea>
+				    <textarea placeholder="Р’Р°С€ РєРѕРјРјРµРЅС‚Р°СЂРёР№"></textarea>
                 </div>
                 <div class="clear"></div>
-				<a onclick="return sendForm(this);" href="#">ОТПРАВИТЬ ЗАЯВКУ</a>
+				<a onclick="return sendForm(this);" href="#">РћРўРџР РђР’РРўР¬ Р—РђРЇР’РљРЈ</a>
 			</form>
         </div>
         <div class="clear"></div>
     </div>
     <div class="block">
         <div class="content work">
-            <h2>КАК МЫ РАБОТАЕМ:</h2>
-            <div class="one_line"><span>1</span>ЗВОНОК В НАШ ОФИС</div>
-            <div class="two_line"><span>2</span>СОГЛАСОВАНИЕ<br />ОБЪЕМА РАБОТ</div>
-            <div class="one_line" style="padding-right: 0;"><span>3</span>ОФОРМЛЕНИЕ ЗАЯВКИ</div>
-            <div class="two_line"><span>4</span>ВЫБОР ДАТЫ<br />И ВРЕМЕНИ</div>
-            <div class="two_line"><span>5</span>ПЕРЕДАЧА ЗАЯВКИ<br />МАСТЕРУ</div>
-            <div class="two_line" style="padding-right: 0;"><span>6</span>ЗВОНОК МАСТЕРА И<br />УТОЧНЕНИЕ ДЕТАЛЕЙ</div>
-            <div class="two_line"><span>7</span>ВЫЕЗД МАСТЕРА<br />В ТЕЧЕНИИ 1 ЧАСА</div>
-            <div class="two_line"><span>8</span>ВЫПОЛНЕНИЕ<br />РЕМОНТНЫХ РАБОТ</div>
-            <div class="two_line" style="padding-right: 0;"><span class="red">9</span><font>КЛИЕНТ</font> ДОВОЛЕН,<br />ДОВОЛЬНЫ И <font>МЫ!</font></div>            
+            <h2>РљРђРљ РњР« Р РђР‘РћРўРђР•Рњ:</h2>
+            <div class="one_line"><span>1</span>Р—Р’РћРќРћРљ Р’ РќРђРЁ РћР¤РРЎ</div>
+            <div class="two_line"><span>2</span>РЎРћР“Р›РђРЎРћР’РђРќРР•<br />РћР‘РЄР•РњРђ Р РђР‘РћРў</div>
+            <div class="one_line" style="padding-right: 0;"><span>3</span>РћР¤РћР РњР›Р•РќРР• Р—РђРЇР’РљР</div>
+            <div class="two_line"><span>4</span>Р’Р«Р‘РћР  Р”РђРўР«<br />Р Р’Р Р•РњР•РќР</div>
+            <div class="two_line"><span>5</span>РџР•Р Р•Р”РђР§Рђ Р—РђРЇР’РљР<br />РњРђРЎРўР•Р РЈ</div>
+            <div class="two_line" style="padding-right: 0;"><span>6</span>Р—Р’РћРќРћРљ РњРђРЎРўР•Р Рђ Р<br />РЈРўРћР§РќР•РќРР• Р”Р•РўРђР›Р•Р™</div>
+            <div class="two_line"><span>7</span>Р’Р«Р•Р—Р” РњРђРЎРўР•Р Рђ<br />Р’ РўР•Р§Р•РќРР 1 Р§РђРЎРђ</div>
+            <div class="two_line"><span>8</span>Р’Р«РџРћР›РќР•РќРР•<br />Р Р•РњРћРќРўРќР«РҐ Р РђР‘РћРў</div>
+            <div class="two_line" style="padding-right: 0;"><span class="red">9</span><font>РљР›РР•РќРў</font> Р”РћР’РћР›Р•Рќ,<br />Р”РћР’РћР›Р¬РќР« Р <font>РњР«!</font></div>            
         </div>
         <div class="clear"></div>
     </div>
     <div class="block callback">
         <div class="content">
-            <h3>ОТПРАВИТЬ ЗАЯВКУ</h3>
+            <h3>РћРўРџР РђР’РРўР¬ Р—РђРЇР’РљРЈ</h3>
             <span><font>+7 (3412)</font> 24 12 24</span>
             <div class="clear"></div>
 			<form method="post" action="http://www.mosmasters.ru/callback.php" enctype="multipart/form-data">
                 <div class="left_form">
-    				<input name="name" type="text" placeholder="Ваше имя" />
-    				<input name="phone" type="text" placeholder="Введите телефон" />
+    				<input name="name" type="text" placeholder="Р’Р°С€Рµ РёРјСЏ" />
+    				<input name="phone" type="text" placeholder="Р’РІРµРґРёС‚Рµ С‚РµР»РµС„РѕРЅ" />
                     <select name="profile">
-                        <option value="0">Профиль работ</option>
-                        <option value="Сантехнические работы">Сантехнические работы</option>
-                        <option value="Электромонтажные работы">Электромонтажные работы</option>
-                        <option value="Плотницкие работы">Плотницкие работы</option>
-                        <option value="Разводка ТВ-кабеля">Разводка ТВ-кабеля</option>
-                        <option value="Усилитель коллективной, эфирной, домашней антенны">Усилитель коллективной, эфирной, домашней антенны</option>
-                        <option value="Установка и подключение бытовой техники">Установка и подключение бытовой техники</option>
-                        <option value="Установка межкомнатных дверей">Установка межкомнатных дверей</option>
-                        <option value="Обивка дверей">Обивка дверей</option>
-                        <option value="Сборка кухни">Сборка кухни</option>
-                        <option value="Ремонт диванов">Ремонт диванов</option>
-                        <option value="Другое">Другое</option>
+                        <option value="0">РџСЂРѕС„РёР»СЊ СЂР°Р±РѕС‚</option>
+                        <option value="РЎР°РЅС‚РµС…РЅРёС‡РµСЃРєРёРµ СЂР°Р±РѕС‚С‹">РЎР°РЅС‚РµС…РЅРёС‡РµСЃРєРёРµ СЂР°Р±РѕС‚С‹</option>
+                        <option value="Р­Р»РµРєС‚СЂРѕРјРѕРЅС‚Р°Р¶РЅС‹Рµ СЂР°Р±РѕС‚С‹">Р­Р»РµРєС‚СЂРѕРјРѕРЅС‚Р°Р¶РЅС‹Рµ СЂР°Р±РѕС‚С‹</option>
+                        <option value="РџР»РѕС‚РЅРёС†РєРёРµ СЂР°Р±РѕС‚С‹">РџР»РѕС‚РЅРёС†РєРёРµ СЂР°Р±РѕС‚С‹</option>
+                        <option value="Р Р°Р·РІРѕРґРєР° РўР’-РєР°Р±РµР»СЏ">Р Р°Р·РІРѕРґРєР° РўР’-РєР°Р±РµР»СЏ</option>
+                        <option value="РЈСЃРёР»РёС‚РµР»СЊ РєРѕР»Р»РµРєС‚РёРІРЅРѕР№, СЌС„РёСЂРЅРѕР№, РґРѕРјР°С€РЅРµР№ Р°РЅС‚РµРЅРЅС‹">РЈСЃРёР»РёС‚РµР»СЊ РєРѕР»Р»РµРєС‚РёРІРЅРѕР№, СЌС„РёСЂРЅРѕР№, РґРѕРјР°С€РЅРµР№ Р°РЅС‚РµРЅРЅС‹</option>
+                        <option value="РЈСЃС‚Р°РЅРѕРІРєР° Рё РїРѕРґРєР»СЋС‡РµРЅРёРµ Р±С‹С‚РѕРІРѕР№ С‚РµС…РЅРёРєРё">РЈСЃС‚Р°РЅРѕРІРєР° Рё РїРѕРґРєР»СЋС‡РµРЅРёРµ Р±С‹С‚РѕРІРѕР№ С‚РµС…РЅРёРєРё</option>
+                        <option value="РЈСЃС‚Р°РЅРѕРІРєР° РјРµР¶РєРѕРјРЅР°С‚РЅС‹С… РґРІРµСЂРµР№">РЈСЃС‚Р°РЅРѕРІРєР° РјРµР¶РєРѕРјРЅР°С‚РЅС‹С… РґРІРµСЂРµР№</option>
+                        <option value="РћР±РёРІРєР° РґРІРµСЂРµР№">РћР±РёРІРєР° РґРІРµСЂРµР№</option>
+                        <option value="РЎР±РѕСЂРєР° РєСѓС…РЅРё">РЎР±РѕСЂРєР° РєСѓС…РЅРё</option>
+                        <option value="Р РµРјРѕРЅС‚ РґРёРІР°РЅРѕРІ">Р РµРјРѕРЅС‚ РґРёРІР°РЅРѕРІ</option>
+                        <option value="Р”СЂСѓРіРѕРµ">Р”СЂСѓРіРѕРµ</option>
                     </select>
                 </div>
                 <div class="right_form">
-				    <textarea name="comment" placeholder="Ваш комментарий"></textarea>
+				    <textarea name="comment" placeholder="Р’Р°С€ РєРѕРјРјРµРЅС‚Р°СЂРёР№"></textarea>
                 </div>
                 <div class="clear"></div>
-				<a onclick="return sendForm(this);" href="#">ОТПРАВИТЬ ЗАЯВКУ</a>
+				<a onclick="return sendForm(this);" href="#">РћРўРџР РђР’РРўР¬ Р—РђРЇР’РљРЈ</a>
 			</form>
         </div>
         <div class="clear"></div>
@@ -400,17 +399,17 @@
     <div class="block footer">
         <div class="content">
             <div class="left_footer">
-                <span>УСТАНОВОЧНЫЙ</span>
-                <font>ЦЕНТР</font>
-                <p>Мы делаем комфорт доступнее</p>
+                <span>РЈРЎРўРђРќРћР’РћР§РќР«Р™</span>
+                <font>Р¦Р•РќРўР </font>
+                <p>РњС‹ РґРµР»Р°РµРј РєРѕРјС„РѕСЂС‚ РґРѕСЃС‚СѓРїРЅРµРµ</p>
             </div>
             <div class="center_footer">
                 <span>+7 (3412) 24 12 24</span>
-                <font>Ежедневно с 9.00 до 19.00</font>
-                <p>Выезд мастера в течение 1 часа<br />в любой район Ижевска</p>
+                <font>Р•Р¶РµРґРЅРµРІРЅРѕ СЃ 9.00 РґРѕ 19.00</font>
+                <p>Р’С‹РµР·Рґ РјР°СЃС‚РµСЂР° РІ С‚РµС‡РµРЅРёРµ 1 С‡Р°СЃР°<br />РІ Р»СЋР±РѕР№ СЂР°Р№РѕРЅ РР¶РµРІСЃРєР°</p>
             </div>
             <div class="right_footer">
-                <p>Выезд мастера в течении<br />1 часа в любой район Ижевска</p>
+                <p>Р’С‹РµР·Рґ РјР°СЃС‚РµСЂР° РІ С‚РµС‡РµРЅРёРё<br />1 С‡Р°СЃР° РІ Р»СЋР±РѕР№ СЂР°Р№РѕРЅ РР¶РµРІСЃРєР°</p>
                 <a class="vk" href="#"></a><a class="fb" href="#"></a><a class="tw" href="#"></a>
             </div>
             <div class="clear"></div>
