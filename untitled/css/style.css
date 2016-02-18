@@ -47,7 +47,7 @@ p {
 .content h1 {
     color: #ffed00;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 25px;
     text-transform: uppercase;
     display: inline-block;
     vertical-align: middle;
@@ -59,9 +59,10 @@ p {
 .footer {
     width: 100%;
     background: #4177B7;
-    min-height: 220px;
+    min-height: 234px;
     color: #fff;
     padding: 25px 0;
+    margin-top: -7px;
 }
 .content p {
     color: #2F2B26;
@@ -117,7 +118,7 @@ h2 {
 .logo {
     /* float: left; */
     clear: both;
-    width: 138px;
+    width: 100px;
     display: inline-block;
     margin-right: 35px;
     margin-bottom: 35px;
@@ -169,8 +170,8 @@ span.phone-icon {
 .carousel {
     border: 3px solid #337AB7;
     padding: 20px 85px;
-    margin-bottom: 20px;
-    margin-top: 24px;
+    margin-bottom: 34px;
+    margin-top: 10px;
 }
 .footer-nav > ul > li > a {
     color: #fff;
@@ -279,6 +280,7 @@ span.email {
 .scrollable {
     margin-bottom: 40px;
 }
-.content {
-    min-height: 70vh;
+.content {max-height: 448px;}
+.right-links {
+    margin-top: -70px;
 }
