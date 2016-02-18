@@ -40,7 +40,7 @@ p {
 }
 .nav>li>a:focus, .nav>li>a:hover {
     background: transparent;
-    border: 2px solid #E6E948;
+    /* border: 2px solid #E6E948; */
     color: #E6E948;
     font-weight: normal;
 }
@@ -66,7 +66,7 @@ p {
 }
 .content p {
     color: #2F2B26;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: normal;
 }
 .btn-primary {
@@ -129,7 +129,7 @@ h2 {
 }
 .question-mark {
     width: 32px;
-    height: 100px;
+    height: 120px;
     background: url('../img/vopr.png');
     background-size: contain;
     float: left;
@@ -281,7 +281,8 @@ span.email {
     margin-bottom: 40px;
 }
 .content {
-    min-height: 73vh;
+    min-height: 69vh;
+    margin-top: 35px;
 }
 .right-links {
     margin-top: -70px;
