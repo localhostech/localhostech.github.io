@@ -3,9 +3,9 @@ body {
     min-width: 1010px;
     font-family: Verdana;
     background: url('../img/background.png') rgb(182, 183, 188);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: 0px 0px;
+    background-position: 0px 83px;
 }
 .container {
     width: 970px !important;
