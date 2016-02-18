@@ -340,3 +340,9 @@ input.input-sm.pull-right.podezd-input {}
 ::-moz-placeholder          {color:#1b1b1b;}/* Firefox 19+ */
 :-moz-placeholder           {color:#1b1b1b;}/* Firefox 18- */
 :-ms-input-placeholder      {color:#1b1b1b;}
+.wrapper {
+    background: url('../img/background.png') rgb(182, 183, 188);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -20px;
+}
