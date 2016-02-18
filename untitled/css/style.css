@@ -280,7 +280,9 @@ span.email {
 .scrollable {
     margin-bottom: 40px;
 }
-.content {max-height: 448px;}
+.content {
+    min-height: 57vh;
+}
 .right-links {
     margin-top: -70px;
 }
