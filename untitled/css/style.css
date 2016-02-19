@@ -240,7 +240,7 @@ span.phone-icon {
     color: #fff;
     text-transform: uppercase;
     text-align: center;
-    padding: 90px 10px;
+    padding: 230px 10px 90px 10px;
     text-decoration: none;
     margin-right: 1%;
     width: 31.33333333%;
@@ -393,4 +393,31 @@ td {
 }
 .results {
     margin-bottom: 60px;
+}
+.dolg-item {
+    background: url('../img/money.png');
+    background-position: center 40px;
+    background-repeat: no-repeat;
+    background-size: 150px;
+}
+.dolg-item:hover {
+    background-image: url('../img/money-yellow.png');
+}
+.tedophone-item {
+    background: url('../img/message.png');
+    background-position: center 40px;
+    background-repeat: no-repeat;
+    background-size: 150px;
+}
+.tedophone-item:hover {
+    background-image: url('../img/message-yello.png');
+}
+.design-item {
+    background: url('../img/brush.png');
+    background-position: center 40px;
+    background-repeat: no-repeat;
+    background-size: 150px;
+}
+.design-item:hover {
+    background-image: url('../img/brush-yellow.png');
 }
