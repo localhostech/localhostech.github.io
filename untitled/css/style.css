@@ -346,3 +346,51 @@ input.input-sm.pull-right.podezd-input {}
     background-repeat: no-repeat;
     margin-top: -20px;
 }
+input.id {
+    border: 4px solid #4177B7;
+    background: rgba(255, 255, 255, 0.4);
+    width: 65%;
+    margin-right: 10px;
+    font-size: 12px;
+    padding: 5px;
+    font-style: italic;
+}
+.find-me input[type="submit"] {
+    background: #C40C04;
+    color: #fff;
+    border: 0;
+    padding: 5px 23px;
+    font-weight: bold;
+    font-size: 17px;
+}
+.find-me {
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+.results h2 {
+    color: #000000;
+    font-size: 16px;
+}
+tr {
+    background: rgba(255, 255, 255, 0.48);
+    font-size: 12px;
+}
+.table-head {
+    background: #4177B7;
+    border: 0;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.table-head > th {
+    text-align: center;
+    border: 0;
+}
+td {
+    text-align: center;
+    color: #000;
+}
+.results {
+    margin-bottom: 60px;
+}
