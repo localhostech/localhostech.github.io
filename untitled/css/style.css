@@ -621,3 +621,6 @@ form {
     font-size: 17px;
     font-weight: bold;
 }
+.small-text:nth-of-type(2) {
+    margin-left: 136px;
+}
