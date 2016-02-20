@@ -30,7 +30,14 @@
 <div class="wrapper">
 <div class="container">
     <div class="row content about-content">
-        <h1>Отзывы</h1><div class="logo pull-right"><a href="index.html"><img src="img/logo.png" alt="Иждомофон"></a></div>
+        <h1>Отзывы</h1><ol class="breadcrumb">
+        <li>
+            <a href="index.html">Главная</a>
+        </li>
+        <li>
+            <a href="responds.html">Отзывы</a>
+        </li>
+    </ol><div class="logo pull-right"><a href="index.html"><img src="img/logo.png" alt="Иждомофон"></a></div>
         <div class="row">
             <div class="col-md-6">
                 <div class="responds">
@@ -115,10 +122,18 @@
                         <br/>
                         <input type="text" class="input-sm adress-input" placeholder="Улица, номер дома">
                         <input type="text" class="input-sm email-input" placeholder="Адрес электронной почты">
-                        <input type="text" class="input-sm podezd-input" placeholder="Подъезд">
-                        <input type="text" class="input-sm flat-input" placeholder="Кв">
+                        <!-- <input type="text" class="input-sm podezd-input" placeholder="Подъезд">
+                        <input type="text" class="input-sm flat-input" placeholder="Кв"> -->
                         <input type="text" class="input-sm pull-right title-input" placeholder="Заголовок сообщения">
                         <textarea name="message" id=""></textarea>
+                        <div class="captcha pull-left">
+                            <div class="captcha-image">
+                                <img src="img/captcha.png" alt="">
+                            </div>
+                            <a href="#" class="refresh"><img src="img/refresh.png" alt=""></a>
+                            <input type="text" class="for-captcha" placeholder="Введите символы">
+                        </div>
+                        <input type="submit" value="ОТПРАВИТЬ">
                     </form>
                 </div>
             </div>
@@ -149,7 +164,7 @@
     </div>
 </footer>
 <script>
-    $(".responds").scrollable({ width: 480, height: 380, showButtons: false });
+    $(".responds").scrollable({ width: 480, height: 430, showButtons: false });
 </script>
 <style>
     .scrollable .slider {

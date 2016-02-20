@@ -30,7 +30,17 @@
 <div class="wrapper">
     <div class="container">
         <div class="row content about-content">
-            <h1>СИСТЕМА ЭКСТРЕННОЙ СВЯЗИ Тедофон</h1><div class="logo pull-right"><a href="index.html"><img src="img/logo.png" alt="Иждомофон"></a></div>
+            <h1>СИСТЕМА ЭКСТРЕННОЙ СВЯЗИ Тедофон</h1><ol class="breadcrumb">
+            <li>
+                <a href="index.html">Главная</a>
+            </li>
+            <li>
+                <a href="clients.html">Клиентам</a>
+            </li>
+            <li>
+                <a href="tedophone.html">Система экстренной связи Тедофон</a>
+            </li>
+        </ol><div class="logo pull-right"><a href="index.html"><img src="img/logo.png" alt="Иждомофон"></a></div>
             <div class="row">
                 <div class="col-md-6">
                     <div class="tedophone-text">
@@ -85,6 +95,14 @@
                             <input type="text" class="adress-input" placeholder="Адрес ( улица, дом, номер подъезда, номер квартиры)">
                             <input type="text" class="podezd-input" placeholder="Номер телефона">
                             <input type="text" class="email-input" placeholder="Адрес электронной почты">
+                            <div class="captcha pull-left">
+                                <div class="captcha-image">
+                                    <img src="img/captcha.png" alt="">
+                                </div>
+                                <a href="#" class="refresh"><img src="img/refresh.png" alt=""></a>
+                                <input type="text" class="for-captcha" placeholder="Введите символы">
+                            </div>
+                            <input type="submit" value="ОТПРАВИТЬ">
                         </form>
                     </div>
                 </div>
@@ -115,7 +133,7 @@
     </div>
 </footer>
 <script>
-    $(".tedophone-text").scrollable({ width: 480, height: 380, showButtons: false });
+    $(".tedophone-text").scrollable({ width: 480, height: 400, showButtons: false });
 </script>
 <style>
     .scrollable .slider {
