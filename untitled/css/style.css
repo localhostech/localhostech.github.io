@@ -569,13 +569,15 @@ form {
     margin-left: 120px;
 }
 .image {
-    width: 20px;
+    width: auto;
     float: left;
     margin-right: 40px;
+    height: 130px;
 }
 
 .image > img {
-    width: 165%;
+    width: auto;
+    height: 130px;
 }
 
 .self-design {

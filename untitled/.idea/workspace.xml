@@ -31,11 +31,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9248021">
-              <caret line="625" column="1" selection-start-line="625" selection-start-column="1" selection-end-line="625" selection-end-column="1" />
+            <state vertical-scroll-proportion="-7.09375">
+              <caret line="613" column="12" selection-start-line="613" selection-start-column="12" selection-end-line="613" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -44,8 +44,8 @@
       <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/about.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-23.75">
-              <caret line="107" column="14" selection-start-line="107" selection-start-column="14" selection-end-line="107" selection-end-column="14" />
+            <state vertical-scroll-proportion="-50.892857">
+              <caret line="90" column="32" selection-start-line="90" selection-start-column="32" selection-end-line="90" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -91,11 +91,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="design.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="design.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/design.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-27.0">
-              <caret line="88" column="22" selection-start-line="88" selection-start-column="22" selection-end-line="88" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.8564232">
+              <caret line="93" column="30" selection-start-line="93" selection-start-column="30" selection-end-line="93" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -115,13 +115,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/clients.html" />
-        <option value="$PROJECT_DIR$/design.html" />
         <option value="$PROJECT_DIR$/tedophone.html" />
         <option value="$PROJECT_DIR$/responds.html" />
         <option value="$PROJECT_DIR$/dolg.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/about.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/design.html" />
       </list>
     </option>
   </component>
@@ -131,8 +131,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="607" />
-    <option name="y" value="8" />
+    <option name="x" value="48" />
+    <option name="y" value="94" />
     <option name="width" value="1173" />
     <option name="height" value="988" />
   </component>
@@ -276,7 +276,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="607" y="8" width="1173" height="988" extended-state="0" />
+    <frame x="48" y="94" width="1173" height="988" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17748918" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -542,26 +542,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/design.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-27.0">
-          <caret line="88" column="22" selection-start-line="88" selection-start-column="22" selection-end-line="88" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/responds.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-20.214285">
           <caret line="154" column="20" selection-start-line="154" selection-start-column="20" selection-end-line="154" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tedophone.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.214285">
-          <caret line="135" column="60" selection-start-line="135" selection-start-column="60" selection-end-line="135" selection-end-column="60" />
           <folding />
         </state>
       </provider>
@@ -590,18 +574,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/about.html">
+    <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-23.75">
-          <caret line="107" column="14" selection-start-line="107" selection-start-column="14" selection-end-line="107" selection-end-column="14" />
+        <state vertical-scroll-proportion="-7.09375">
+          <caret line="613" column="12" selection-start-line="613" selection-start-column="12" selection-end-line="613" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
+    <entry file="file://$PROJECT_DIR$/about.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9248021">
-          <caret line="625" column="1" selection-start-line="625" selection-start-column="1" selection-end-line="625" selection-end-column="1" />
+        <state vertical-scroll-proportion="-50.892857">
+          <caret line="90" column="32" selection-start-line="90" selection-start-column="32" selection-end-line="90" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tedophone.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.214285">
+          <caret line="135" column="60" selection-start-line="135" selection-start-column="60" selection-end-line="135" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8564232">
+          <caret line="93" column="30" selection-start-line="93" selection-start-column="30" selection-end-line="93" selection-end-column="30" />
           <folding />
         </state>
       </provider>
