@@ -180,7 +180,7 @@ const quizContent = {
         {
           "id": "q7-option-3",
           "label": "B.",
-          "text": "Leave them alone, stay with them, and monitor their breathing."
+          "text": "Leave them alone, stay with them, and monitor his breathing."
         }
       ],
       "correctIds": [
